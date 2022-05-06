@@ -19,7 +19,7 @@ def collect_data():
     print("Starting...")
     current_date = date.today()
 
-    if not os.path.isdir("folder"):
+    if not os.path.isdir("../out"):
         os.mkdir("../out")
 
     with open(f'../out/{current_date}_videocards.csv', 'w', newline='', encoding='utf-8') as file:
