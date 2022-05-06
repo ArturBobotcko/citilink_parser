@@ -1,5 +1,6 @@
 import requests
 import csv
+import os
 from datetime import date
 from bs4 import BeautifulSoup
 
@@ -17,6 +18,10 @@ def collect_data():
 
     print("Starting...")
     current_date = date.today()
+
+    if not os.path.isdir("folder"):
+        os.mkdir("../out")
+
     with open(f'../out/{current_date}_videocards.csv', 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(
