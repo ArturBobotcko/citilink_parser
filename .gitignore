@@ -131,3 +131,5 @@ dmypy.json
 # Others
 *.csv
 .idea
+auth_data.py
+*.json
