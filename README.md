@@ -1,1 +1,1 @@
-# citilink_parser
+# Парсер видеокарт с сайта www.citilink.ru
