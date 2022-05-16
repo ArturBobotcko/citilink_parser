@@ -20,6 +20,9 @@ def collect_data():
     print("Starting...")
     current_date = date.today()
 
+    if not os.path.isdir("../out"):
+        os.mkdir("../out")
+
     if not os.path.isdir("../out/csv"):
         os.mkdir("../out/csv")
 
